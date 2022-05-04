@@ -55,6 +55,10 @@ ec2 연결
 
 3. ec2 연결 후 stress -c 1 --timeout 300s
 
+![](https://velog.velcdn.com/images/jm1225/post/447d1df1-ac5a-4838-9fda-744b75f026d8/image.png)
+
+![](https://velog.velcdn.com/images/jm1225/post/18859bbc-ab92-413a-8349-33a8aa7422dd/image.png)
+
 ![](https://velog.velcdn.com/images/jm1225/post/268b76e5-7fd9-4363-916d-8782ae7caeca/image.png)
 
 ![](https://velog.velcdn.com/images/jm1225/post/e4aac2b1-cea0-465e-be0b-b466cc3b4105/image.png)
