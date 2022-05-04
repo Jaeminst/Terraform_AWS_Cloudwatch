@@ -8,6 +8,7 @@ terraform init
 terraform apply
 ```
 ## step 2
+### asg-alarm.tf로 경보 생성 후 sns 연결필요.
 
 AWS console에서 경보생성
 [AWS 경보생성 hands-on](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/US_AlarmAtThresholdEC2.html)
