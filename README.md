@@ -5,7 +5,7 @@
 
 추가적으로 모니터링을 통해 모든 지표를 항상 관찰할 수 없으므로, 주요 메트릭의 임계치, 또는 장애 발생 예상 시점(예를 들어, CPU 사용량이 80%에 도달할 경우)을 경보의 형태로 제공해야 합니다. 이를 기존에 익혔던 SNS 및 람다를 통해 구현해봅시다.
 
-## step 1
+## step 1 Get Started Terraform Code
 
 테라폼으로 vpc, launch-template, autoscaling, user-data ...
 ```
@@ -37,7 +37,7 @@ Scale-out 조건: CPU 50% 이상
 경보 - 작업 - 편집 - 바로 다음 누르고 - 알림 추가
 알림 - 새 주제 생성 - email 아무거나 - 주제 생성
 
-## step 3
+## step 3 Lambda
 Lambda 함수 생성
 런타임 python 3.x
 블루프린트 `cloudwatch-alarm-to-slack-python` 기반 코드작성됨.
@@ -53,7 +53,7 @@ HOOK_URL | `https://discord.com/api/webhooks/**************1336/o9yLba95y4asEZyw
 
 트리거에 sns 연결
 
-## step 4
+## step 4 ec2 stress
 
 ec2 연결 
 
