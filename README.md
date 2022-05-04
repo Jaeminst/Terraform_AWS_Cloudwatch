@@ -7,7 +7,7 @@
 terraform init
 terraform apply
 ```
-## step 2
+## step 2 - 1 (직접생성)
 ### asg-alarm.tf로 경보 생성 후 sns 연결필요.
 
 AWS console에서 경보생성
@@ -26,6 +26,11 @@ Scale-out 조건: CPU 50% 이상
 생성시 email 아무거나..(필요없으나 여기서 생성시 필수항목)
 
 경보생성 완료
+
+## step 2 - 2 (테라폼으로 생성후 연결)
+### Scale-in, out 각각 sns 추가해줄것.
+경보 - 작업 - 편집 - 바로 다음 누르고 - 알림 추가
+알림 - 새 주제 생성 - email 아무거나 - 주제 생성
 
 ## step 3
 Lambda 함수 생성
