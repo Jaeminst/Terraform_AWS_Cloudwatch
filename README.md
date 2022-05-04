@@ -53,7 +53,7 @@ ec2 연결
 
 2. 오토스케일링에서 인스턴스 새로고침 - 새로고침 시작 - 일치 건너띄기 체크해제 - 원하는구성 시작 템플릿 업데이트 체크 - 인스턴스 새로고침 시작(5분정도 걸림)
 
-3. ec2 연결 후 stress -c 1 --timeout 300s
+3. ec2 연결 후 `$ stress -c 1 --timeout 300s` 입력
 
 ![](https://velog.velcdn.com/images/jm1225/post/447d1df1-ac5a-4838-9fda-744b75f026d8/image.png)
 
