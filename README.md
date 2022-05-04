@@ -1,4 +1,9 @@
 # sprint-CloudWatch
+![](https://velog.velcdn.com/images/jm1225/post/a18b9cb9-1e9d-43df-9bc3-6f58640e8e3a/image.png)
+
+갑작스러운 트래픽 증가에 대응하기 위해서는, 서버의 주요 메트릭을 모니터링하고, 특정 메트릭이 임계치를 넘을 때, 수평 확장이 자동으로 진행되게 하는 것이 바람직합니다. 우리는 이미 앞서 AWS를 통해 이러한 서비스를 제공하는 Auto Scaling Group (이하 ASG)에 대해 배웠습니다. 스프린트를 통해 ASG의 원리를 익히고, 메트릭에 따른 스케일링 정책을 세우고 모니터링을 통해 정책이 적용되는지 확인해봅시다.
+
+추가적으로 모니터링을 통해 모든 지표를 항상 관찰할 수 없으므로, 주요 메트릭의 임계치, 또는 장애 발생 예상 시점(예를 들어, CPU 사용량이 80%에 도달할 경우)을 경보의 형태로 제공해야 합니다. 이를 기존에 익혔던 SNS 및 람다를 통해 구현해봅시다.
 
 ## step 1
 
@@ -67,3 +72,5 @@ ec2 연결
 ![](https://velog.velcdn.com/images/jm1225/post/268b76e5-7fd9-4363-916d-8782ae7caeca/image.png)
 
 ![](https://velog.velcdn.com/images/jm1225/post/e4aac2b1-cea0-465e-be0b-b466cc3b4105/image.png)
+
+![](https://velog.velcdn.com/images/jm1225/post/79862900-a315-49c2-9e41-9ed7a3f8414a/image.png)
